@@ -1,0 +1,193 @@
+@media (max-width: 400px) {
+  .prompt {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.7rem 0.2rem 0.9rem 0.2rem;
+    border-radius: 12px;
+    min-width: 0;
+    max-width: 99vw;
+    width: 99vw;
+    font-size: 0.95rem;
+    position: fixed;
+  }
+  .bell {
+    min-width: 22px;
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    display: inline-flex;
+    align-items: center;
+  }
+  .closeBtn {
+    position: static;
+    align-self: flex-end;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0 0.15em;
+    margin-bottom: 0.2rem;
+  }
+  .text {
+    font-size: 0.95rem;
+    text-align: left;
+    margin-bottom: 0.3rem;
+    margin-top: 0.1rem;
+  }
+  .enableBtn {
+    width: 100%;
+    margin: 0.2rem 0 0 0;
+    font-size: 0.98rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    align-self: stretch;
+  }
+  /* Bell and close in a row */
+  .prompt > .bell, .prompt > .closeBtn {
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  .prompt > .bell {
+    margin-right: 0.5rem;
+  }
+  .prompt > .closeBtn {
+    margin-left: auto;
+  }
+  .prompt > .bell, .prompt > .closeBtn {
+    margin-bottom: 0;
+  }
+  .prompt > .text {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .prompt {
+    font-size: 0.97rem;
+    padding: 0.7rem 0.6rem;
+    border-radius: 16px;
+    max-width: 99vw;
+    min-width: 0;
+  }
+  .text {
+    font-size: 0.97rem;
+  }
+  .enableBtn {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 13px;
+    margin-left: 0.7rem;
+  }
+  .bell {
+    min-width: 24px;
+    font-size: 1.2rem;
+    margin-right: 8px;
+  }
+  .closeBtn {
+    font-size: 1.2rem;
+    top: 10px;
+    right: 10px;
+    padding: 0 0.15em;
+  }
+}
+/* NotificationPrompt.module.css */
+/* --- Desktop & default --- */
+.prompt {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  max-width: 440px;
+  width: 92vw;
+  background: linear-gradient(120deg, #1A73E8 60%, #5ee7df 100%);
+  color: #fff;
+  z-index: 2000;
+  padding: 1.2rem 1.5rem;
+  border-radius: 22px;
+  box-shadow: 0 8px 40px 0 #1A73E8cc, 0 1.5px 8px #fff3;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-size: 1.08rem;
+  font-weight: 500;
+  backdrop-filter: blur(8px) saturate(1.2);
+  border: 2.5px solid #fff4;
+  animation: notifPopIn 0.5s cubic-bezier(.4,2,.6,1);
+  background-blend-mode: overlay;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.bell {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  min-width: 32px;
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.35;
+}
+/* --- Button --- */
+.enableBtn {
+  background: linear-gradient(90deg, #fff 60%, #e3eefd 100%);
+  color: #1A73E8;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px #fff2, 0 0.5px 2px #1A73E820;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, transform 0.12s;
+  outline: none;
+}
+.enableBtn:active {
+  background: linear-gradient(90deg, #e3eefd 60%, #fff 100%);
+  color: #1761c7;
+  transform: scale(0.97);
+}
+.enableBtn:focus {
+  box-shadow: 0 0 0 2.5px #1A73E8cc;
+}
+/* --- Close (X) Button --- */
+.closeBtn {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1;
+  align-self: flex-start;
+  transition: color 0.18s;
+  padding: 0 0.2em;
+  display: flex;
+  align-items: center;
+}
+.closeBtn:hover, .closeBtn:focus {
+  color: #ffd700;
+}
+@keyframes notifPopIn {
+  0% { opacity: 0; transform: translateX(-50%) translateY(40px) scale(0.95); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+}
+.bell svg {
+  animation: notifBellShake 1.2s cubic-bezier(.4,2,.6,1) 0.2s 2;
+}
+@keyframes notifBellShake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-12deg); }
+  20% { transform: rotate(10deg); }
+  30% { transform: rotate(-8deg); }
+  40% { transform: rotate(6deg); }
+  50% { transform: rotate(-4deg); }
+  60% { transform: rotate(2deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+

@@ -37,7 +37,7 @@ function HeroSection({ onGetWord }) {
                 Subscribe
               </button>
             </div>
-            <ul className="list-unstyled d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-2" style={{fontSize:16, color:'#e0e6ed'}}>
+            <ul className={`list-unstyled d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-2 ${styles.featureList}`} style={{fontSize:16, color:'#e0e6ed'}}>
               <li><i className="bi bi-star-fill text-warning me-1"></i>Bookmark favorites</li>
               <li><i className="bi bi-fire text-danger me-1"></i>Track your streak</li>
               <li><i className="bi bi-archive me-1"></i>Explore the archive</li>

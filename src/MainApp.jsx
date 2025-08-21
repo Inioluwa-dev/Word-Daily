@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { words } from './words';
+
 import Navbar from './components/Navbar';
 import ArchiveSection from './components/ArchiveSection';
 import FooterSection from './components/FooterSection';
@@ -8,6 +9,8 @@ import BookmarkPage from './components/BookmarkPage';
 import HomePage from './components/HomePage';
 import TodayWordPage from './components/TodayWordPage';
 import { requestWordDailyNotification } from './notification';
+import dictionaryImg from './assets/dictionary.jpg';
+import NotificationPrompt from './components/NotificationPrompt';
 
 // IMPORTANT: The daily word index and entry are computed here.
 // The same 'entry' is used for both the UI and the notification,
@@ -38,14 +41,19 @@ function addBookmark(word) {
 function MainApp() {
   const navigate = useNavigate();
   const [streak, setStreak] = React.useState(getLearnedStreak());
+  const [showNotifPrompt, setShowNotifPrompt] = React.useState(false);
   // Compute today's word index and entry ONCE per render
   const index = ((getDayIndex() % words.length) + words.length) % words.length;
   const entry = words[index];
 
   // Notification logic
-  // Send notification for today's word (same as displayed)
   React.useEffect(() => {
     requestWordDailyNotification(entry);
+    if (typeof window !== 'undefined' && 'Notification' in window) {
+      if (Notification.permission === 'default') {
+        setShowNotifPrompt(true);
+      }
+    }
   }, [entry]);
 
   const handleBookmarked = (word) => {
@@ -53,9 +61,32 @@ function MainApp() {
     setStreak(getLearnedStreak());
   };
 
+  const handleEnableNotifications = () => {
+    if ('Notification' in window) {
+      Notification.requestPermission().then((permission) => {
+        setShowNotifPrompt(false);
+        if (permission === 'granted') {
+          // Show today's notification instantly
+          new Notification('Word Daily', {
+            body: `${entry.word}: ${entry.definition}`,
+            icon: dictionaryImg,
+          });
+          // Optionally, update last notified date
+          localStorage.setItem('lastWordNotification', new Date().toISOString().slice(0, 10));
+        }
+      });
+    }
+  };
+
   return (
     <div className="d-flex flex-column min-vh-100 bg-gradient">
       <Navbar />
+      {showNotifPrompt && (
+        <NotificationPrompt
+          onEnable={handleEnableNotifications}
+          onClose={() => setShowNotifPrompt(false)}
+        />
+      )}
       <Routes>
         <Route
           path="/"

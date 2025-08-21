@@ -106,8 +106,6 @@ export const words = [
     pos: 'adjective',
     definition: 'Reserved or uncommunicative in speech; saying little.',
     example: 'He was taciturn, speaking only when necessary.'
-
-
   },
   {
     word: 'Sagacious',
@@ -126,18 +124,6 @@ export const words = [
     pos: 'adjective',
     definition: 'Full of or shedding light; bright or shining.',
     example: 'The luminous moon lit up the night sky.'
-  },
-  {
-    word: 'Ineffable',
-    pos: 'adjective',
-    definition: 'Too great or extreme to be expressed or described in words.',
-    example: 'The beauty of the sunrise was ineffable.'
-  },
-  {
-    word: 'Obfuscate',
-    pos: 'verb',
-    definition: 'To render obscure, unclear, or unintelligible.',
-    example: 'The report was written to obfuscate the real issues.'
   },
   {
     word: 'Pernicious',
@@ -350,13 +336,6 @@ export const words = [
     example: 'The yielding clay was easy to shape.'
   },
   {
-    word: 'Zealot',
-    pos: 'noun',
-    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
-    example: 'The zealot was unwavering in his beliefs.'
-  },
-  // 25 new, unique words
-  {
     word: 'Demure',
     pos: 'adjective',
     definition: '(Of a woman or her behavior) reserved, modest, and shy.',
@@ -417,22 +396,10 @@ export const words = [
     example: 'He was filled with nostalgia for his childhood.'
   },
   {
-    word: 'Obdurate',
-    pos: 'adjective',
-    definition: 'Stubbornly refusing to change one’s opinion or course of action.',
-    example: 'He remained obdurate, refusing to alter his decision.'
-  },
-  {
     word: 'Panacea',
     pos: 'noun',
     definition: 'A solution or remedy for all difficulties or diseases.',
     example: 'There is no single panacea for the world’s economic problems.'
-  },
-  {
-    word: 'Quiescent',
-    pos: 'adjective',
-    definition: 'In a state or period of inactivity or dormancy.',
-    example: 'The volcano was quiescent for centuries.'
   },
   {
     word: 'Rescind',
@@ -441,203 +408,9 @@ export const words = [
     example: 'The company decided to rescind the offer.'
   },
   {
-    word: 'Sanguine',
-    pos: 'adjective',
-    definition: 'Optimistic or positive, especially in a bad situation.',
-    example: 'She remained sanguine despite the setbacks.'
-  },
-  {
-    word: 'Tantamount',
-    pos: 'adjective',
-    definition: 'Equivalent in seriousness to; virtually the same as.',
-    example: 'His silence was tantamount to an admission of guilt.'
-  },
-  {
-    word: 'Ubiquity',
-    pos: 'noun',
-    definition: 'The fact of appearing everywhere or of being very common.',
-    example: 'The ubiquity of smartphones is undeniable.'
-  },
-  {
-    word: 'Veracity',
-    pos: 'noun',
-    definition: 'Conformity to facts; accuracy.',
-    example: 'The lawyer questioned the veracity of the witness.'
-  },
-  {
-    word: 'Wistful',
-    pos: 'adjective',
-    definition: 'Having or showing a feeling of vague or regretful longing.',
-    example: 'He gave a wistful look at the old photographs.'
-  },
-  {
-    word: 'Xenophile',
-    pos: 'noun',
-    definition: 'An individual who is attracted to foreign peoples, cultures, or customs.',
-    example: 'As a xenophile, she loved traveling to new countries.'
-  },
-  {
-    word: 'Yielding',
-    pos: 'adjective',
-    definition: 'Giving way under pressure; not hard or rigid.',
-    example: 'The yielding clay was easy to shape.'
-  },
-  {
-    word: 'Zealot',
-    pos: 'noun',
-    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
-    example: 'The zealot was unwavering in his beliefs.'
-  },
-  {
-    word: 'Pugnacious',
-    pos: 'adjective',
-    definition: 'Eager or quick to argue, quarrel, or fight.',
-    example: 'His pugnacious attitude often got him into trouble.'
-  },
-  {
-    word: 'Recalcitrant',
-    pos: 'adjective',
-    definition: 'Having an obstinately uncooperative attitude toward authority.',
-    example: 'The recalcitrant student refused to follow the rules.'
-  },
-  {
-    word: 'Sanguine',
-    pos: 'adjective',
-    definition: 'Optimistic or positive, especially in a bad situation.',
-    example: 'She remained sanguine despite the setbacks.'
-  },
-  {
-    word: 'Tantamount',
-    pos: 'adjective',
-    definition: 'Equivalent in seriousness to; virtually the same as.',
-    example: 'His silence was tantamount to an admission of guilt.'
-  },
-  {
-    word: 'Ubiquity',
-    pos: 'noun',
-    definition: 'The fact of appearing everywhere or of being very common.',
-    example: 'The ubiquity of smartphones is undeniable.'
-  },
-  {
-    word: 'Veracity',
-    pos: 'noun',
-    definition: 'Conformity to facts; accuracy.',
-    example: 'The lawyer questioned the veracity of the witness.'
-  },
-  {
-    word: 'Wistful',
-    pos: 'adjective',
-    definition: 'Having or showing a feeling of vague or regretful longing.',
-    example: 'He gave a wistful look at the old photographs.'
-  },
-  {
-    word: 'Xenophile',
-    pos: 'noun',
-    definition: 'An individual who is attracted to foreign peoples, cultures, or customs.',
-    example: 'As a xenophile, she loved traveling to new countries.'
-  },
-  {
-    word: 'Yielding',
-    pos: 'adjective',
-    definition: 'Giving way under pressure; not hard or rigid.',
-    example: 'The yielding clay was easy to shape.'
-  },
-  {
-    word: 'Zealot',
-    pos: 'noun',
-    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
-    example: 'The zealot was unwavering in his beliefs.'
-  },
-  {
     word: 'Acrimonious',
     pos: 'adjective',
     definition: 'Angry and bitter, especially in speech or debate.',
     example: 'The discussion turned acrimonious.'
-  },
-  {
-    word: 'Bucolic',
-    pos: 'adjective',
-    definition: 'Relating to the pleasant aspects of the countryside and country life.',
-    example: 'They enjoyed a bucolic picnic in the meadow.'
-  },
-  {
-    word: 'Camaraderie',
-    pos: 'noun',
-    definition: 'Mutual trust and friendship among people who spend a lot of time together.',
-    example: 'There was a sense of camaraderie among the teammates.'
-  },
-  {
-    word: 'Deleterious',
-    pos: 'adjective',
-    definition: 'Causing harm or damage.',
-    example: 'The chemical has deleterious effects on the environment.'
-  },
-  {
-    word: 'Ennui',
-    pos: 'noun',
-    definition: 'A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.',
-    example: 'He suffered from ennui during the long summer.'
-  },
-  {
-    word: 'Felicity',
-    pos: 'noun',
-    definition: 'Intense happiness.',
-    example: 'She smiled with felicity on her wedding day.'
-  },
-  {
-    word: 'Garrulous',
-    pos: 'adjective',
-    definition: 'Excessively talkative, especially on trivial matters.',
-    example: 'The garrulous host kept the guests entertained.'
-  },
-  {
-    word: 'Halcyon',
-    pos: 'adjective',
-    definition: 'Denoting a period of time in the past that was idyllically happy and peaceful.',
-    example: 'They reminisced about the halcyon days of their youth.'
-  },
-  {
-    word: 'Iconoclast',
-    pos: 'noun',
-    definition: 'A person who attacks cherished beliefs or institutions.',
-    example: 'The artist was known as an iconoclast.'
-  },
-  {
-    word: 'Jocular',
-    pos: 'adjective',
-    definition: 'Fond of or characterized by joking; humorous or playful.',
-    example: 'His jocular remarks lightened the mood.'
-  },
-  {
-    word: 'Keen',
-    pos: 'adjective',
-    definition: 'Having or showing eagerness or enthusiasm.',
-    example: 'She was keen to start her new job.'
-  },
-  {
-    word: 'Laconic',
-    pos: 'adjective',
-    definition: 'Using very few words.',
-    example: 'His laconic reply suggested a lack of interest.'
-  },
-  {
-    word: 'Mellifluous',
-    pos: 'adjective',
-    definition: 'Sweet or musical; pleasant to hear.',
-    example: 'She had a rich, mellifluous voice.'
-  },
-  {
-    word: 'Nebulous',
-    pos: 'adjective',
-    definition: 'In the form of a cloud or haze; hazy.',
-    example: 'The plan was still nebulous in their minds.'
-  },
-  {
-    word: 'Obdurate',
-    pos: 'adjective',
-    definition: 'Stubbornly refusing to change one’s opinion or course of action.',
-    example: 'He remained obdurate, refusing to alter his decision.'
   }
 ]
-
-

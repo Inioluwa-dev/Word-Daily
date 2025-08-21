@@ -1,3 +1,28 @@
+@media (max-width: 767.98px) {
+  .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    flex-wrap: wrap;
+    text-align: center;
+    white-space: normal;
+  }
+}
+@media (max-width: 575.98px) {
+  .badge {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 1.2rem;
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+  }
+  .streak {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
 /* StreakCounter.module.css */
 .streak {
   display: flex;
