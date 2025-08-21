@@ -51,8 +51,6 @@ A modern, professional "Word of the Day" app built with React, Vite, and Bootstr
 ## Credits
 - Icons: [Bootstrap Icons](https://icons.getbootstrap.com/)
 - Illustrations: Custom/Unsplash
-- Built by Inioluwa-dev
+- Built by Inioluwa-dev / Mr Heritage
 
----
 
-> This project is open source and MIT licensed. Contributions welcome!
