@@ -1,5 +1,6 @@
 
 
+// StreakCounter displays the user's current learning streak.
 import styles from './StreakCounter.module.css';
 import React from 'react';
 

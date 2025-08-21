@@ -1,19 +1,19 @@
 
-
+// NewsletterSection provides a form for users to subscribe to the newsletter.
 import styles from './NewsletterSection.module.css';
 import React, { useState } from 'react';
-
 
 function NewsletterSection() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("");
   const [error, setError] = useState("");
 
+  // Validate email format
   function validateEmail(email) {
-    // Simple email regex
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
+  // Handle newsletter form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("");

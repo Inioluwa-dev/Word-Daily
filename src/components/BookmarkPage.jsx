@@ -1,21 +1,23 @@
-
+// BookmarkPage displays all words the user has bookmarked for later review.
 import styles from './BookmarkPage.module.css';
 import React, { useState } from 'react';
 import { words } from '../words';
 
 function BookmarkPage() {
-  // For demo: bookmarks are stored in local state. In real app, use localStorage or backend.
+  // Bookmarks are stored in localStorage
   const [bookmarks, setBookmarks] = useState(() => {
     const saved = localStorage.getItem('bookmarkedWords');
     return saved ? JSON.parse(saved) : [];
   });
 
+  // Remove a word from bookmarks
   const removeBookmark = (word) => {
     const updated = bookmarks.filter(w => w !== word);
     setBookmarks(updated);
     localStorage.setItem('bookmarkedWords', JSON.stringify(updated));
   };
 
+  // Get all bookmarked word objects
   const bookmarkedWords = words.filter(w => bookmarks.includes(w.word));
 
   return (

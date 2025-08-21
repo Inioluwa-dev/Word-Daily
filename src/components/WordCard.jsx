@@ -1,7 +1,11 @@
 
+// WordCard displays a single word, its part of speech, definition, and example.
+// Includes actions for copying, downloading, and bookmarking the word.
 import styles from './WordCard.module.css';
 import React, { useRef, useState } from 'react';
 
+
+// Track learned words in localStorage
 function addLearnedWord(word) {
   let learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
   if (!learned.includes(word)) {
@@ -11,15 +15,19 @@ function addLearnedWord(word) {
 }
 
 
+// entry: word object; onBookmarked: callback for bookmark action
 function WordCard({ entry, onBookmarked }) {
   const textRef = useRef();
   const [copied, setCopied] = useState(false);
   const [bookmarked, setBookmarked] = useState(false);
 
+  // If no word entry is provided, render nothing
   if (!entry) return null;
 
+  // Text used for copy/download actions
   const wordText = `Word: ${entry.word}\nPart of Speech: ${entry.pos}\nDefinition: ${entry.definition}\nExample: ${entry.example}`;
 
+  // Copy word info to clipboard
   const handleCopy = () => {
     navigator.clipboard.writeText(wordText);
     setCopied(true);
@@ -27,6 +35,7 @@ function WordCard({ entry, onBookmarked }) {
     setTimeout(() => setCopied(false), 1500);
   };
 
+  // Download word info as a text file
   const handleDownload = () => {
     const blob = new Blob([wordText], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
@@ -38,6 +47,7 @@ function WordCard({ entry, onBookmarked }) {
     addLearnedWord(entry.word);
   };
 
+  // Bookmark the word and update learned words
   const handleBookmark = () => {
     if (onBookmarked) onBookmarked(entry.word);
     addLearnedWord(entry.word);

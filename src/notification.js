@@ -1,5 +1,8 @@
 // notification.js
+
 // Handles browser notification logic for Word Daily
+// The 'entry' parameter is always the same word as displayed in the UI (see MainApp.jsx)
+// This guarantees the notification and the displayed word are always in sync.
 
 import dictionaryImg from './assets/dictionary.jpg';
 

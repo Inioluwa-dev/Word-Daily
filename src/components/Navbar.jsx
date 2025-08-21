@@ -1,10 +1,14 @@
+
+// Navbar provides navigation links for the app, including mobile and desktop layouts.
 import { useState } from 'react';
 import styles from './Navbar.module.css';
 import { Link, NavLink } from 'react-router-dom';
 
+// Handles navigation menu state and rendering
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Toggle and close mobile menu
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 

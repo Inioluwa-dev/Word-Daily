@@ -1,9 +1,8 @@
-
+// HeroSection is the main landing section with call-to-action buttons.
 import styles from './HeroSection.module.css';
-
-
 import dictionaryImg from '../assets/dictionary.jpg';
 
+// onGetWord: callback to scroll to or show today's word
 function HeroSection({ onGetWord }) {
   return (
     <section className={styles.hero}>

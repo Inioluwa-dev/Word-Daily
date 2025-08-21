@@ -6,10 +6,10 @@ export const words = [
     example: 'She gave an eloquent speech that moved everyone.'
   },
   {
-    word: 'Pragmatic',
-    pos: 'adjective',
-    definition: 'Dealing with things sensibly and realistically.',
-    example: 'He took a pragmatic approach to solving the problem.'
+    word: 'Zealot',
+    pos: 'noun',
+    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
+    example: 'The zealot was unwavering in his beliefs.'
   },
   {
     word: 'Ubiquitous',
@@ -102,22 +102,541 @@ export const words = [
     example: 'He likes to ruminate on philosophical questions.'
   },
   {
+    word: 'Taciturn',
+    pos: 'adjective',
+    definition: 'Reserved or uncommunicative in speech; saying little.',
+    example: 'He was taciturn, speaking only when necessary.'
+
+
+  },
+  {
     word: 'Sagacious',
     pos: 'adjective',
     definition: 'Having or showing keen mental discernment and good judgment; wise.',
     example: 'The sagacious leader guided the team to success.'
   },
   {
-    word: 'Taciturn',
+    word: 'Quixotic',
     pos: 'adjective',
-    definition: 'Reserved or uncommunicative in speech; saying little.',
-    example: 'He was taciturn, speaking only when necessary.'
+    definition: 'Exceedingly idealistic; unrealistic and impractical.',
+    example: 'His quixotic quest for perfection frustrated his colleagues.'
   },
   {
-    word: 'Vociferous',
+    word: 'Luminous',
     pos: 'adjective',
-    definition: 'Vehement or clamorous; loudly expressing opinions.',
-    example: 'The crowd was vociferous in its support.'
+    definition: 'Full of or shedding light; bright or shining.',
+    example: 'The luminous moon lit up the night sky.'
+  },
+  {
+    word: 'Ineffable',
+    pos: 'adjective',
+    definition: 'Too great or extreme to be expressed or described in words.',
+    example: 'The beauty of the sunrise was ineffable.'
+  },
+  {
+    word: 'Obfuscate',
+    pos: 'verb',
+    definition: 'To render obscure, unclear, or unintelligible.',
+    example: 'The report was written to obfuscate the real issues.'
+  },
+  {
+    word: 'Pernicious',
+    pos: 'adjective',
+    definition: 'Having a harmful effect, especially in a gradual or subtle way.',
+    example: 'The pernicious weed spread throughout the farmland.'
+  },
+  {
+    word: 'Redolent',
+    pos: 'adjective',
+    definition: 'Strongly reminiscent or suggestive of (something); fragrant or sweet-smelling.',
+    example: 'The kitchen was redolent with the aroma of fresh bread.'
+  },
+  {
+    word: 'Sycophant',
+    pos: 'noun',
+    definition: 'A person who acts obsequiously toward someone important in order to gain advantage.',
+    example: 'The office sycophant always agreed with the boss.'
+  },
+  {
+    word: 'Trepidation',
+    pos: 'noun',
+    definition: 'A feeling of fear or agitation about something that may happen.',
+    example: 'She entered the room with some trepidation.'
+  },
+  {
+    word: 'Vicissitude',
+    pos: 'noun',
+    definition: 'A change of circumstances or fortune, typically one that is unwelcome or unpleasant.',
+    example: 'They remained friends through the vicissitudes of life.'
+  },
+  {
+    word: 'Winsome',
+    pos: 'adjective',
+    definition: 'Attractive or appealing in appearance or character.',
+    example: 'Her winsome smile charmed everyone she met.'
+  },
+  {
+    word: 'Zephyr',
+    pos: 'noun',
+    definition: 'A soft gentle breeze.',
+    example: 'A zephyr cooled the hot summer afternoon.'
+  },
+  {
+    word: 'Aplomb',
+    pos: 'noun',
+    definition: 'Self-confidence or assurance, especially when in a demanding situation.',
+    example: 'He handled the interview with great aplomb.'
+  },
+  {
+    word: 'Benevolent',
+    pos: 'adjective',
+    definition: 'Well meaning and kindly.',
+    example: 'The benevolent donor gave generously to the charity.'
+  },
+  {
+    word: 'Cacophony',
+    pos: 'noun',
+    definition: 'A harsh, discordant mixture of sounds.',
+    example: 'The cacophony of the city streets was overwhelming.'
+  },
+  {
+    word: 'Alacrity',
+    pos: 'noun',
+    definition: 'Brisk and cheerful readiness.',
+    example: 'She accepted the invitation with alacrity.'
+  },
+  {
+    word: 'Bucolic',
+    pos: 'adjective',
+    definition: 'Relating to the pleasant aspects of the countryside and country life.',
+    example: 'They enjoyed a bucolic afternoon in the meadow.'
+  },
+  {
+    word: 'Camaraderie',
+    pos: 'noun',
+    definition: 'Mutual trust and friendship among people who spend a lot of time together.',
+    example: 'There was a sense of camaraderie among the teammates.'
+  },
+  {
+    word: 'Deleterious',
+    pos: 'adjective',
+    definition: 'Causing harm or damage.',
+    example: 'The chemical has deleterious effects on the environment.'
+  },
+  {
+    word: 'Ennui',
+    pos: 'noun',
+    definition: 'A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.',
+    example: 'He suffered from ennui during the long summer.'
+  },
+  {
+    word: 'Felicity',
+    pos: 'noun',
+    definition: 'Intense happiness.',
+    example: 'She smiled with felicity on her wedding day.'
+  },
+  {
+    word: 'Garrulous',
+    pos: 'adjective',
+    definition: 'Excessively talkative, especially on trivial matters.',
+    example: 'The garrulous host kept the guests entertained.'
+  },
+  {
+    word: 'Halcyon',
+    pos: 'adjective',
+    definition: 'Denoting a period of time in the past that was idyllically happy and peaceful.',
+    example: 'They reminisced about the halcyon days of their youth.'
+  },
+  {
+    word: 'Iconoclast',
+    pos: 'noun',
+    definition: 'A person who attacks cherished beliefs or institutions.',
+    example: 'The artist was known as an iconoclast.'
+  },
+  {
+    word: 'Jocular',
+    pos: 'adjective',
+    definition: 'Fond of or characterized by joking; humorous or playful.',
+    example: 'His jocular remarks lightened the mood.'
+  },
+  {
+    word: 'Keen',
+    pos: 'adjective',
+    definition: 'Having or showing eagerness or enthusiasm.',
+    example: 'She was keen to start her new job.'
+  },
+  {
+    word: 'Laconic',
+    pos: 'adjective',
+    definition: 'Using very few words.',
+    example: 'His laconic reply suggested a lack of interest.'
+  },
+  {
+    word: 'Mellifluous',
+    pos: 'adjective',
+    definition: 'Sweet or musical; pleasant to hear.',
+    example: 'She had a rich, mellifluous voice.'
+  },
+  {
+    word: 'Nebulous',
+    pos: 'adjective',
+    definition: 'In the form of a cloud or haze; hazy.',
+    example: 'The plan was still nebulous in their minds.'
+  },
+  {
+    word: 'Obdurate',
+    pos: 'adjective',
+    definition: 'Stubbornly refusing to change one’s opinion or course of action.',
+    example: 'He remained obdurate, refusing to alter his decision.'
+  },
+  {
+    word: 'Pugnacious',
+    pos: 'adjective',
+    definition: 'Eager or quick to argue, quarrel, or fight.',
+    example: 'His pugnacious attitude often got him into trouble.'
+  },
+  {
+    word: 'Quiescent',
+    pos: 'adjective',
+    definition: 'In a state or period of inactivity or dormancy.',
+    example: 'The volcano was quiescent for centuries.'
+  },
+  {
+    word: 'Recalcitrant',
+    pos: 'adjective',
+    definition: 'Having an obstinately uncooperative attitude toward authority.',
+    example: 'The recalcitrant student refused to follow the rules.'
+  },
+  {
+    word: 'Sanguine',
+    pos: 'adjective',
+    definition: 'Optimistic or positive, especially in a bad situation.',
+    example: 'She remained sanguine despite the setbacks.'
+  },
+  {
+    word: 'Tantamount',
+    pos: 'adjective',
+    definition: 'Equivalent in seriousness to; virtually the same as.',
+    example: 'His silence was tantamount to an admission of guilt.'
+  },
+  {
+    word: 'Ubiquity',
+    pos: 'noun',
+    definition: 'The fact of appearing everywhere or of being very common.',
+    example: 'The ubiquity of smartphones is undeniable.'
+  },
+  {
+    word: 'Veracity',
+    pos: 'noun',
+    definition: 'Conformity to facts; accuracy.',
+    example: 'The lawyer questioned the veracity of the witness.'
+  },
+  {
+    word: 'Wistful',
+    pos: 'adjective',
+    definition: 'Having or showing a feeling of vague or regretful longing.',
+    example: 'He gave a wistful look at the old photographs.'
+  },
+  {
+    word: 'Xenophile',
+    pos: 'noun',
+    definition: 'An individual who is attracted to foreign peoples, cultures, or customs.',
+    example: 'As a xenophile, she loved traveling to new countries.'
+  },
+  {
+    word: 'Yielding',
+    pos: 'adjective',
+    definition: 'Giving way under pressure; not hard or rigid.',
+    example: 'The yielding clay was easy to shape.'
+  },
+  {
+    word: 'Zealot',
+    pos: 'noun',
+    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
+    example: 'The zealot was unwavering in his beliefs.'
+  },
+  // 25 new, unique words
+  {
+    word: 'Demure',
+    pos: 'adjective',
+    definition: '(Of a woman or her behavior) reserved, modest, and shy.',
+    example: 'She gave him a demure smile.'
+  },
+  {
+    word: 'Ebullient',
+    pos: 'adjective',
+    definition: 'Cheerful and full of energy.',
+    example: 'The ebullient crowd cheered for the performers.'
+  },
+  {
+    word: 'Furtive',
+    pos: 'adjective',
+    definition: 'Attempting to avoid notice or attention, typically because of guilt.',
+    example: 'He cast a furtive glance at the exit.'
+  },
+  {
+    word: 'Harbinger',
+    pos: 'noun',
+    definition: 'A person or thing that announces or signals the approach of another.',
+    example: 'The robin is a harbinger of spring.'
+  },
+  {
+    word: 'Impetuous',
+    pos: 'adjective',
+    definition: 'Acting or done quickly and without thought or care.',
+    example: 'Her impetuous decision led to unexpected results.'
+  },
+  {
+    word: 'Juxtapose',
+    pos: 'verb',
+    definition: 'To place or deal with close together for contrasting effect.',
+    example: 'The exhibition juxtaposes modern art with classical sculpture.'
+  },
+  {
+    word: 'Kaleidoscope',
+    pos: 'noun',
+    definition: 'A constantly changing pattern or sequence of objects or elements.',
+    example: 'The city lights formed a kaleidoscope of colors.'
+  },
+  {
+    word: 'Lethargic',
+    pos: 'adjective',
+    definition: 'Affected by lethargy; sluggish and apathetic.',
+    example: 'He felt lethargic after the long flight.'
+  },
+  {
+    word: 'Munificent',
+    pos: 'adjective',
+    definition: 'Larger or more generous than is usual or necessary.',
+    example: 'The university received a munificent donation.'
+  },
+  {
+    word: 'Nostalgia',
+    pos: 'noun',
+    definition: 'A sentimental longing or wistful affection for the past.',
+    example: 'He was filled with nostalgia for his childhood.'
+  },
+  {
+    word: 'Obdurate',
+    pos: 'adjective',
+    definition: 'Stubbornly refusing to change one’s opinion or course of action.',
+    example: 'He remained obdurate, refusing to alter his decision.'
+  },
+  {
+    word: 'Panacea',
+    pos: 'noun',
+    definition: 'A solution or remedy for all difficulties or diseases.',
+    example: 'There is no single panacea for the world’s economic problems.'
+  },
+  {
+    word: 'Quiescent',
+    pos: 'adjective',
+    definition: 'In a state or period of inactivity or dormancy.',
+    example: 'The volcano was quiescent for centuries.'
+  },
+  {
+    word: 'Rescind',
+    pos: 'verb',
+    definition: 'Revoke, cancel, or repeal (a law, order, or agreement).',
+    example: 'The company decided to rescind the offer.'
+  },
+  {
+    word: 'Sanguine',
+    pos: 'adjective',
+    definition: 'Optimistic or positive, especially in a bad situation.',
+    example: 'She remained sanguine despite the setbacks.'
+  },
+  {
+    word: 'Tantamount',
+    pos: 'adjective',
+    definition: 'Equivalent in seriousness to; virtually the same as.',
+    example: 'His silence was tantamount to an admission of guilt.'
+  },
+  {
+    word: 'Ubiquity',
+    pos: 'noun',
+    definition: 'The fact of appearing everywhere or of being very common.',
+    example: 'The ubiquity of smartphones is undeniable.'
+  },
+  {
+    word: 'Veracity',
+    pos: 'noun',
+    definition: 'Conformity to facts; accuracy.',
+    example: 'The lawyer questioned the veracity of the witness.'
+  },
+  {
+    word: 'Wistful',
+    pos: 'adjective',
+    definition: 'Having or showing a feeling of vague or regretful longing.',
+    example: 'He gave a wistful look at the old photographs.'
+  },
+  {
+    word: 'Xenophile',
+    pos: 'noun',
+    definition: 'An individual who is attracted to foreign peoples, cultures, or customs.',
+    example: 'As a xenophile, she loved traveling to new countries.'
+  },
+  {
+    word: 'Yielding',
+    pos: 'adjective',
+    definition: 'Giving way under pressure; not hard or rigid.',
+    example: 'The yielding clay was easy to shape.'
+  },
+  {
+    word: 'Zealot',
+    pos: 'noun',
+    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
+    example: 'The zealot was unwavering in his beliefs.'
+  },
+  {
+    word: 'Pugnacious',
+    pos: 'adjective',
+    definition: 'Eager or quick to argue, quarrel, or fight.',
+    example: 'His pugnacious attitude often got him into trouble.'
+  },
+  {
+    word: 'Recalcitrant',
+    pos: 'adjective',
+    definition: 'Having an obstinately uncooperative attitude toward authority.',
+    example: 'The recalcitrant student refused to follow the rules.'
+  },
+  {
+    word: 'Sanguine',
+    pos: 'adjective',
+    definition: 'Optimistic or positive, especially in a bad situation.',
+    example: 'She remained sanguine despite the setbacks.'
+  },
+  {
+    word: 'Tantamount',
+    pos: 'adjective',
+    definition: 'Equivalent in seriousness to; virtually the same as.',
+    example: 'His silence was tantamount to an admission of guilt.'
+  },
+  {
+    word: 'Ubiquity',
+    pos: 'noun',
+    definition: 'The fact of appearing everywhere or of being very common.',
+    example: 'The ubiquity of smartphones is undeniable.'
+  },
+  {
+    word: 'Veracity',
+    pos: 'noun',
+    definition: 'Conformity to facts; accuracy.',
+    example: 'The lawyer questioned the veracity of the witness.'
+  },
+  {
+    word: 'Wistful',
+    pos: 'adjective',
+    definition: 'Having or showing a feeling of vague or regretful longing.',
+    example: 'He gave a wistful look at the old photographs.'
+  },
+  {
+    word: 'Xenophile',
+    pos: 'noun',
+    definition: 'An individual who is attracted to foreign peoples, cultures, or customs.',
+    example: 'As a xenophile, she loved traveling to new countries.'
+  },
+  {
+    word: 'Yielding',
+    pos: 'adjective',
+    definition: 'Giving way under pressure; not hard or rigid.',
+    example: 'The yielding clay was easy to shape.'
+  },
+  {
+    word: 'Zealot',
+    pos: 'noun',
+    definition: 'A person who is fanatical and uncompromising in pursuit of their ideals.',
+    example: 'The zealot was unwavering in his beliefs.'
+  },
+  {
+    word: 'Acrimonious',
+    pos: 'adjective',
+    definition: 'Angry and bitter, especially in speech or debate.',
+    example: 'The discussion turned acrimonious.'
+  },
+  {
+    word: 'Bucolic',
+    pos: 'adjective',
+    definition: 'Relating to the pleasant aspects of the countryside and country life.',
+    example: 'They enjoyed a bucolic picnic in the meadow.'
+  },
+  {
+    word: 'Camaraderie',
+    pos: 'noun',
+    definition: 'Mutual trust and friendship among people who spend a lot of time together.',
+    example: 'There was a sense of camaraderie among the teammates.'
+  },
+  {
+    word: 'Deleterious',
+    pos: 'adjective',
+    definition: 'Causing harm or damage.',
+    example: 'The chemical has deleterious effects on the environment.'
+  },
+  {
+    word: 'Ennui',
+    pos: 'noun',
+    definition: 'A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.',
+    example: 'He suffered from ennui during the long summer.'
+  },
+  {
+    word: 'Felicity',
+    pos: 'noun',
+    definition: 'Intense happiness.',
+    example: 'She smiled with felicity on her wedding day.'
+  },
+  {
+    word: 'Garrulous',
+    pos: 'adjective',
+    definition: 'Excessively talkative, especially on trivial matters.',
+    example: 'The garrulous host kept the guests entertained.'
+  },
+  {
+    word: 'Halcyon',
+    pos: 'adjective',
+    definition: 'Denoting a period of time in the past that was idyllically happy and peaceful.',
+    example: 'They reminisced about the halcyon days of their youth.'
+  },
+  {
+    word: 'Iconoclast',
+    pos: 'noun',
+    definition: 'A person who attacks cherished beliefs or institutions.',
+    example: 'The artist was known as an iconoclast.'
+  },
+  {
+    word: 'Jocular',
+    pos: 'adjective',
+    definition: 'Fond of or characterized by joking; humorous or playful.',
+    example: 'His jocular remarks lightened the mood.'
+  },
+  {
+    word: 'Keen',
+    pos: 'adjective',
+    definition: 'Having or showing eagerness or enthusiasm.',
+    example: 'She was keen to start her new job.'
+  },
+  {
+    word: 'Laconic',
+    pos: 'adjective',
+    definition: 'Using very few words.',
+    example: 'His laconic reply suggested a lack of interest.'
+  },
+  {
+    word: 'Mellifluous',
+    pos: 'adjective',
+    definition: 'Sweet or musical; pleasant to hear.',
+    example: 'She had a rich, mellifluous voice.'
+  },
+  {
+    word: 'Nebulous',
+    pos: 'adjective',
+    definition: 'In the form of a cloud or haze; hazy.',
+    example: 'The plan was still nebulous in their minds.'
+  },
+  {
+    word: 'Obdurate',
+    pos: 'adjective',
+    definition: 'Stubbornly refusing to change one’s opinion or course of action.',
+    example: 'He remained obdurate, refusing to alter his decision.'
   }
 ]
 

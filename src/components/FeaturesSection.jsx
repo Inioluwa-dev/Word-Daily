@@ -1,4 +1,4 @@
-
+// FeaturesSection lists the main benefits/features of the app.
 import styles from './FeaturesSection.module.css';
 import React from 'react';
 

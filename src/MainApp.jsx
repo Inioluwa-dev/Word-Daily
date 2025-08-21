@@ -9,12 +9,17 @@ import HomePage from './components/HomePage';
 import TodayWordPage from './components/TodayWordPage';
 import { requestWordDailyNotification } from './notification';
 
-function getHourIndex() {
+// IMPORTANT: The daily word index and entry are computed here.
+// The same 'entry' is used for both the UI and the notification,
+// ensuring that the word shown and the word notified are always identical.
+
+
+function getDayIndex() {
   const now = new Date();
   const start = new Date(Date.UTC(2024, 0, 1, 0, 0, 0));
   const diffMs = now.getTime() - start.getTime();
-  const diffHours = Math.floor(diffMs / 3600000);
-  return diffHours;
+  const diffDays = Math.floor(diffMs / 86400000); // ms in a day
+  return diffDays;
 }
 
 function getLearnedStreak() {
@@ -33,10 +38,12 @@ function addBookmark(word) {
 function MainApp() {
   const navigate = useNavigate();
   const [streak, setStreak] = React.useState(getLearnedStreak());
-  const index = ((getHourIndex() % words.length) + words.length) % words.length;
+  // Compute today's word index and entry ONCE per render
+  const index = ((getDayIndex() % words.length) + words.length) % words.length;
   const entry = words[index];
 
   // Notification logic
+  // Send notification for today's word (same as displayed)
   React.useEffect(() => {
     requestWordDailyNotification(entry);
   }, [entry]);

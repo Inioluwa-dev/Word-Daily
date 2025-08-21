@@ -1,7 +1,13 @@
+
+// TodayWordPage displays the current day's word, streak counter, and a button to explore more words.
 import React from 'react';
 import StreakCounter from './StreakCounter';
 import WordCard from './WordCard';
 
+// streak: number of learned words in a row
+// entry: today's word object
+// onBookmarked: callback for bookmarking
+// onArchive: callback to navigate to archive
 function TodayWordPage({ streak, entry, onBookmarked, onArchive }) {
   return (
     <main className="flex-grow-1 d-flex align-items-center justify-content-center py-5">

@@ -1,12 +1,58 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Word Daily
 
-Currently, two official plugins are available:
+A modern, professional "Word of the Day" app built with React, Vite, and Bootstrap.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Word Daily**: Get a new word every day, with part of speech, definition, and example.
+- **SaaS-style Landing Page**: Beautiful, responsive design with glassmorphism and modern UI.
+- **Bookmark System**: Save your favorite words for later review.
+- **Archive**: Browse and search all previously featured words.
+- **Streak Counter**: Track how many words you've truly learned (only counts when you copy, download, or bookmark).
+- **Newsletter**: Subscribe to get new words in your inbox (Formspree integration).
+- **Browser Notifications**: Opt-in to receive a daily word notification.
+- **Mobile Responsive**: Works great on all devices.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
+- [React Router v6](https://reactrouter.com/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. **Install dependencies:**
+	```bash
+	npm install
+	```
+2. **Run the app locally:**
+	```bash
+	npm run dev
+	```
+3. **Build for production:**
+	```bash
+	npm run build
+	```
+
+## Project Structure
+
+- `src/components/` — All React components (Hero, Navbar, WordCard, etc.)
+- `src/assets/` — Images (including the book and lightbulb icons)
+- `src/words.js` — Word data
+- `src/notification.js` — Notification logic
+- `public/` — Static files and favicon
+
+## Customization
+- **Branding:** All references use "Word Daily" for a consistent brand.
+- **Favicon:** Uses the book image for browser tabs.
+- **Notification Icon:** Uses the book image for push notifications.
+
+## Credits
+- Icons: [Bootstrap Icons](https://icons.getbootstrap.com/)
+- Illustrations: Custom/Unsplash
+- Built by Inioluwa-dev
+
+---
+
+> This project is open source and MIT licensed. Contributions welcome!
