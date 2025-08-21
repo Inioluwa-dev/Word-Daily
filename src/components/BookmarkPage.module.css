@@ -1,0 +1,19 @@
+/* BookmarkPage.module.css */
+.section {
+  background: #f8fafc;
+  padding: 3rem 0;
+  min-height: 100vh;
+}
+.card {
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 16px rgba(26, 115, 232, 0.08);
+  padding: 1.5rem 1rem;
+  position: relative;
+  background: #fff;
+}
+.removeBtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+}

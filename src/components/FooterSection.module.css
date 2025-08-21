@@ -1,0 +1,21 @@
+/* FooterSection.module.css */
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 1.5rem 0;
+  letter-spacing: 0.01em;
+}
+.socialIcon {
+  color: #bbb;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.socialIcon:hover {
+  color: #1A73E8;
+}
+.copyright {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  color: #aaa;
+}

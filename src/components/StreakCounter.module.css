@@ -1,0 +1,19 @@
+/* StreakCounter.module.css */
+.streak {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.badge {
+  background: #F1C40F;
+  color: #222;
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(241,196,15,0.10);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

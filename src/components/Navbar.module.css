@@ -1,0 +1,83 @@
+/* Navbar.module.css */
+.navbar {
+  background: #10131a !important;
+  box-shadow: 0 2px 12px rgba(26, 23, 40, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1A73E8 !important;
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  color: #F1C40F !important;
+}
+
+/* Sidebar for mobile */
+.sideMenu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100%;
+  background: #1a1d29;
+  padding: 1.5rem;
+  transition: left 0.3s ease-in-out;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideMenu.open {
+  left: 0;
+}
+
+.sideMenu .nav-link {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.sideMenu .nav-link:hover {
+  color: #F1C40F;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1050;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .sideMenu,
+  .overlay {
+    display: none !important;
+  }
+
+  .navbar .nav-link {
+    color: #fff;
+  }
+
+  .navbar .nav-link:hover {
+    color: #F1C40F;
+  }
+}
